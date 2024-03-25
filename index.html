@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Kalam simple</title>
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="nav">
+            <div id="nav-part1">
+                <h3>
+                    <a href="index.html">Home</a>
+                </h3>
+                <i class="ri-menu-3-line"></i>
+            </div>
+            <div id="nav-part2">
+                <h1>Abdul Kalam</h1>
+            </div>
+            <div id="nav-part3">
+                <button id="btn1">
+                    <a href="https://www.linkedin.com/in/abdul-kalam-46179b213/" target="_blank">
+                        <i class="ri-linkedin-box-fill"></i></a>
+                </button>
+                <button id="btn2">
+                    <a href="mailto:shaikabdulkalam9390@gmail.com">mail <i class="ri-mail-fill"></i></a>
+                </button>
+            </div>
+        </div>
+        <h1 id="desc">Web Developer</h1>
+        <img src="image1.jpg"
+            id="img1" class="center-img">
+
+        <img src="image2.jpg"
+            id="img2" class="center-img">
+
+        <img src="image3.jpg"
+            id="img3" class="center-img">
+        <img src="image4.jpg"
+            id="img4" class="center-img">
+        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2ViJTIwZGVzaWdufGVufDB8fDB8fHww"
+            id="img5" class="center-img">
+        <h5 id="btm-left">My design and development, My passion</h5>
+        <div id="btm-right">
+            <div style="margin-right: 10px;"><h5>Profiles</h5></div>
+            <div class="socials">
+                <a href="https://twitter.com/Abdulkalam1093" target="_blank">
+                    <i class="ri-twitter-fill"></i>
+                </a>
+                <a href="https://github.com/Kalam-321" target="_blank">
+                    <i class="ri-github-fill"></i>
+                </a>
+                <a href="https://leetcode.com/Abdul_Kalam-2023/" target="_blank">
+                    <i class="ri-code-line"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll('.center-img');
+            images.forEach((image,index) => {
+                image.addEventListener('click', () => {
+                    image.classList.add('fadeOut');
+                    setTimeout(() => {
+                        image.style.display = 'none';
+                        image.classList.remove('fadeOut');
+                        const nextIndex = index-1;
+                        images[nextIndex].style.transform = 'translate(-50%,-50%) rotate(0deg)';
+                    }, 500);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

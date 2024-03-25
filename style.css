@@ -1,0 +1,270 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+html,body
+{
+    height: 100%;
+    width: 100%;
+    background: rgb(240, 216, 185);
+}
+
+#main
+{
+    height: 100%;
+    width: 100%;
+}
+
+#nav
+{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    
+}
+
+#nav-part1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#nav h3
+{
+    font-size: 17px;
+    border: 1.5px solid black;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+#nav h3 a
+{
+    text-decoration: none;
+    color: #333;
+}
+
+#nav i
+{
+    font-size: 16px;
+    border: 1.5px solid black;
+    font-weight: 500;
+    padding: 5px 8px;
+    border-radius: 50px;
+}
+
+#nav h1
+{
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+#nav button
+{
+    padding: 7px 12px;
+    border-radius: 50px;
+    border: 1.5px solid black;
+    font-size: 16px;
+    background-color: white;
+    font-weight: 600;
+}
+
+#btn1 a i
+{
+    text-decoration: none;
+    color: #333;
+    border: none ;
+    outline: none ;
+}
+
+
+
+#btn2
+{
+    border: none !important;
+    color: white;
+    background-color: orangered !important;
+}
+
+#btn2 a
+{
+    text-decoration: none;
+    color: white;
+}
+
+#btn2 a i
+{
+    border: none;
+}
+#main>h1
+{
+    font-size: 120px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+}
+
+img
+{
+    height: 500px;
+    width: 300px;
+    /* object-fit: cover; */
+    /* object-position: top; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#img1
+{
+    transform: translate(-50%,-50%) rotate(-40deg);
+}
+#img2
+{
+    transform: translate(-50%,-50%) rotate(-30deg);
+}
+#img3
+{
+    transform: translate(-50%,-50%) rotate(-20deg);
+}
+#img4
+{
+    transform: translate(-50%,-50%) rotate(-10deg);
+}
+#img5
+{
+    object-fit: cover;
+}
+
+#btm-left
+{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-size: 17px;
+    
+}
+
+#btm-right
+{
+    width: 100px;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 17px;
+}
+
+#btm-right h5
+{
+    text-align: center;
+}
+
+.fadeOut {
+    animation: fadeOutAnimation 0.5s ease-out;
+}
+
+@keyframes fadeOutAnimation {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+#main>h1 {
+    animation: colorChange 2s infinite alternate;
+    color: grey;
+}
+
+@keyframes colorChange {
+    0% {
+        color: grey;
+    }
+    50% {
+        color: #333;
+    }
+    100% {
+        color: black;
+    }
+}
+
+.socials
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.socials a
+{
+    text-decoration: none;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    color: #333;
+    padding: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+    #main>h1
+    {
+        width: 95%;
+        font-size: 50px;
+    }
+    #btm-left
+    {
+        width: 50%;
+    }
+    #nav-part2
+    {
+        text-align: center;
+    }
+    #nav-part3
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    #nav
+    {
+        gap: 5px;
+    }
+    img
+    {
+        height: 350px;
+        width: 230px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #main>h1
+    {
+        font-size: 90px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    #main>h1
+    {
+        font-size: 120px;
+    }
+}
