@@ -133,19 +133,19 @@ img
 
 #img1
 {
-    transform: translate(-50%,-50%) rotate(-40deg);
+    transform: translate(-50%,-50%) rotate(-35deg);
 }
 #img2
 {
-    transform: translate(-50%,-50%) rotate(-30deg);
+    transform: translate(-50%,-50%) rotate(25deg);
 }
 #img3
 {
-    transform: translate(-50%,-50%) rotate(-20deg);
+    transform: translate(-50%,-50%) rotate(-15deg);
 }
 #img4
 {
-    transform: translate(-50%,-50%) rotate(-10deg);
+    transform: translate(-50%,-50%) rotate(5deg);
 }
 #img5
 {
